@@ -2,6 +2,8 @@
 title: About Goldydocs
 linkTitle: About
 menu: {main: {weight: 10}}
+toc_hide: true
+hide_summary: true
 ---
 
 {{% blocks/cover title="About Goldydocs" image_anchor="bottom" height="auto" %}}
