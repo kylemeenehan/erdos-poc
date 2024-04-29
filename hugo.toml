@@ -1,4 +1,4 @@
-baseURL = "https://erdos-poc.netlify.com/"
+baseURL = "https://erdos-poc.netlify.app/"
 title = "Erdős Problems"
 
 # Language settings
@@ -74,24 +74,6 @@ section = ["HTML", "print", "RSS"]
 [params]
 privacy_policy = "https://policies.google.com/privacy"
 
-[params.katex]
-enable = true
-[[params.katex.options.delimiters]]
-  left = "$$"
-  right = "$$"
-  display = true
-[[params.katex.options.delimiters]]
-  left = "$"
-  right = "$"
-  display = false
-[[params.katex.options.delimiters]]
-  left = "\\("
-  right = "\\)"
-  display = false
-[[params.katex.options.delimiters]]
-  left = "\\["
-  right = "\\]"
-  display = true
 
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
@@ -129,8 +111,27 @@ offlineSearch = true
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
 
+[params.katex]
+enable = true
+[[params.katex.options.delimiters]]
+  left = "$$"
+  right = "$$"
+  display = true
+[[params.katex.options.delimiters]]
+  left = "$"
+  right = "$"
+  display = false
+[[params.katex.options.delimiters]]
+  left = "\\("
+  right = "\\)"
+  display = false
+[[params.katex.options.delimiters]]
+  left = "\\["
+  right = "\\]"
+  display = true
+
 [params.copyright]
-  authors = "TODO: Confirm copyright | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | "
+  authors = "Erdős Problems"
   from_year = 2024
 
 # User interface configuration
