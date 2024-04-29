@@ -1,12 +1,12 @@
-baseURL = "https://example.docsy.dev/"
-title = "Goldydocs"
+baseURL = "https://erdos-poc.netlify.com/"
+title = "Erdős Problems"
 
 # Language settings
-contentDir = "content/en"
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
+contentDir = "content"
+# defaultContentLanguage = "en"
+# defaultContentLanguageInSubdir = false
 # Useful when translating.
-enableMissingTranslationPlaceholders = true
+# enableMissingTranslationPlaceholders = true
 
 enableRobotsTXT = true
 
@@ -53,33 +53,6 @@ anchor = "smart"
 
 # Language configuration
 
-[languages]
-[languages.en]
-languageName ="English"
-# Weight used for sorting.
-weight = 1
-[languages.en.params]
-title = "Goldydocs"
-description = "A Docsy example site"
-
-[languages.no]
-languageName ="Norsk"
-contentDir = "content/no"
-[languages.no.params]
-title = "Goldydocs"
-description = "Docsy er operativsystem for skyen"
-time_format_default = "02.01.2006"
-time_format_blog = "02.01.2006"
-
-[languages.fa]
-languageName ="فارسی"
-contentDir = "content/fa"
-[languages.fa.params]
-title = "اسناد گلدی"
-description = "یک نمونه برای پوسته داکسی"
-time_format_default = "2006.01.02"
-time_format_blog = "2006.01.02"
-
 [markup]
   [markup.goldmark]
     [markup.goldmark.parser.attribute]
@@ -100,6 +73,25 @@ section = ["HTML", "print", "RSS"]
 
 [params]
 privacy_policy = "https://policies.google.com/privacy"
+
+[params.katex]
+enable = true
+[[params.katex.options.delimiters]]
+  left = "$$"
+  right = "$$"
+  display = true
+[[params.katex.options.delimiters]]
+  left = "$"
+  right = "$"
+  display = false
+[[params.katex.options.delimiters]]
+  left = "\\("
+  right = "\\)"
+  display = false
+[[params.katex.options.delimiters]]
+  left = "\\["
+  right = "\\]"
+  display = true
 
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
@@ -135,17 +127,17 @@ github_project_repo = "https://github.com/google/docsy"
 github_branch= "main"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "d72aa9b2712488cc3"
+# gcs_engine_id = "not-configured"
 
 # Enable Lunr.js offline search
-offlineSearch = false
+offlineSearch = true
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
 
 [params.copyright]
-  authors = "Docsy Authors | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | "
-  from_year = 2018
+  authors = "TODO: Confirm copyright | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | "
+  from_year = 2024
 
 # User interface configuration
 [params.ui]
@@ -165,7 +157,7 @@ sidebar_search_disable = false
 # If you want this feature, but occasionally need to remove the "Feedback" section from a single page,
 # add "hide_feedback: true" to the page's front matter.
 [params.ui.feedback]
-enable = true
+enable = false
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
 yes = 'Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
 no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
